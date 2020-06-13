@@ -35,4 +35,5 @@
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="SplashScreenWidth" value="700" />
     <preference name="SplashScreenHeight" value="1000" />
+    <splash src="splash.jpg"/>
 </widget>

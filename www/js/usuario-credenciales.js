@@ -1,7 +1,6 @@
 verCredenciales();
 
 function verCredenciales() {
-	mostrarCargando();
 	setTimeout( function() {
 		$(".ui-page-active [name^=cred]").each(function() {
 			var elemento 	= $(this);
@@ -54,7 +53,6 @@ function onOffCredencialRSP( rsp ) {
 }
 
 function checkCredencialesRSP( rsp ) {
-	quitarCargando();
 	rsp.datos.map( function( val, idx ) {
 		var obj = $("[data-credencial="+val['co_credencial']+"]");
 		obj.prop('checked',true).prev().addClass('ui-'+obj['0']['type']+'-on').removeClass('ui-'+obj['0']['type']+'-off');
