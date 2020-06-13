@@ -1,0 +1,58 @@
+<section data-role="page" id="admin-marcas" class="" data-theme="c">
+	<div data-role="header" data-position="fixed">
+		<a href="#" data-rel="back" class="ui-btn"><i class="la la-arrow-left"></i></a>
+		<h1><i class="la la-barcode"></i> Marcas</h1>
+	</div>
+	<div data-role="content">
+		<div class="basic-box">
+			<div class="row center-xs">
+				<div class="col-xs-12 col-sm-6">
+					<p>Aquí puedes agregar una marca nueva con el nombre y el rubro al que pertenece...</p>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6">
+							<div class="form-group">
+								<label for="tx_marca">Marca:</label>
+								<input type="text" name="tx_marca">   
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<div class="form-group">
+								<label for="tx_rubro">Rubro:</label>
+								<select name="tx_rubro">
+									<option value="">Elige uno...</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<a href="#" onclick="guardarMarca()" class="ui-btn bg-green text-white">Guardar</a>
+				</div>
+			</div>
+		</div>
+		<div class="basic-box">
+			<div class="row center-xs">
+				<div class="col-xs-12 col-sm-6">
+					<p>...o puedes ver las que están registradas filtradas por rubros. Elige un rubro para ver las marcas asociadas.</p>
+					<select name="tx_rubro_filtro" onchange="verMarcas()">
+						<option value="">Todos</option>
+					</select>
+				</div>
+				<div class="col-xs-12 col-sm-7">
+					<div class="table-responsive">
+						<table class="table table-bordered table-hover table-striped">
+							<thead>
+								<tr class="bg-blue text-white">
+									<td>Marca</td>
+									<td>Rubro</td>
+								</tr>
+							</thead>
+							<tbody id="tablaMarcas"></tbody>
+						</table>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../../js/common.js"></script>
+	<script type="text/javascript" src="../../js/admin-marcas.js"></script>
+</section>

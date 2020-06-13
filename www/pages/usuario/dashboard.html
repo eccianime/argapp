@@ -1,0 +1,66 @@
+<section data-role="page" id="usuario-dashboard" data-theme="c">
+	<div data-role="header" data-position="fixed">
+		<h1><span class="text-maroon">T</span>
+		<span class="text-green">O</span>
+		<span class="text-yellow">D</span>
+		<span class="text-orange">D</span>
+		<span class="text-purple">E</span>
+		<span class="text-blue">S</span></h1>
+		<a href="#" onclick="closeSession()" class="ui-btn ui-btn-right"><i class="la la-power-off"></i></a>
+	</div>
+	<div data-role="content" class="infinite-block">
+		<div class="basic-box">
+			<h3>Hola <span id=tx_nombres></span>,</h3>
+			<p>Estas son tus credenciales:</p>
+			<div class="table-responsive" id="listaCredenciales">
+				<div class="text-center" style="height: 80px">
+					Cargando...<br/>
+					<i class="la la-sync la-spin la-3x"></i>
+				</div>
+			</div>
+			<p class="text-right"><a href="registro-credenciales.html" class="text-nostyle">¿Falta alguna credencial?</a></p>
+			
+		</div>
+		<div class="basic-box">
+			<p>Descuentos de hoy</p>
+			<div id="listaDescuentos" class="table-responsive">
+				<div class="text-center" style="height: 80px">
+					Cargando...<br/>
+					<i class="la la-sync la-spin la-3x"></i>
+				</div>
+			</div>
+			<p class="text-right"><a href="descuentos.html" class="text-nostyle">Ver Más Descuentos</a></p>
+		</div>
+		<div class="basic-box">
+			<p>¿Qué descuento estás buscando?</p>
+			<div class="row" id="listaRubros">
+				<div class="text-center" style="height: 80px">
+					Cargando...<br/>
+					<i class="la la-sync la-spin la-3x"></i>
+				</div>
+			</div>
+		</div>
+		<div class="basic-box"><p>Top Beneficios del Mes</p>
+		<div id="listaTopDescuentos" class="table-responsive">
+			<div class="text-center" style="height: 80px">
+				Cargando...<br/>
+				<i class="la la-sync la-spin la-3x"></i>
+			</div>
+		</div>
+		</div>
+		<div class="basic-box">
+			<p>Busca tu beneficio por:</p>
+			<div data-role="navbar" class="benef-navbar">
+			<ul>
+				<li><a href="#"><i class="la la-globe"></i><br/><span class=busca-benef-categ>Ubicación</span></a></li>
+				<li><a href="#"><i class="la la-tags"></i><br/><span class=busca-benef-categ>Marca</span></a></li>
+				<li><a href="#"><i class="la la-percentage"></i><br/><span class=busca-benef-categ>Descuento</span></a></li>
+				<li><a href="#"><i class="la la-credit-card"></i><br/><span class=busca-benef-categ>Tarjeta</span></a></li>
+			</ul>
+		</div>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="../../js/common.js"></script>
+	<script type="text/javascript" src="../../js/usuario-dashboard.js"></script>
+</section>

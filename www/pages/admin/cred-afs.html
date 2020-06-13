@@ -1,0 +1,44 @@
+<section data-role="page" id="admin-cred-afs" class="" data-theme="c">
+	<div data-role="header" data-position="fixed">
+		<a href="#" data-rel="back" class="ui-btn"><i class="la la-arrow-left"></i></a>
+		<h1><i class="la la-people-carry"></i> Afiliación Sindical</h1>
+	</div>
+	<div data-role="content">
+		<div class="row center-xs">
+			<div class="col-xs-12 col-sm-offset-1 col-sm-6">
+				<div class="basic-box">
+					<p>Agregar Afiliación Sindical</p>
+					<div class="form-group">
+						<label for="tx_nombre">Nombre:</label>
+						<input type="hidden" name="co_tipo_credencial" value=5>   
+						<input type="text" name="tx_nombre">   
+					</div>
+					<div class="form-group">
+						<label for="img_logo">Logo:</label>
+						<input type="file" name="img_logo">   
+					</div>
+					<a href="#" onclick="guardarCredencial()" class="ui-btn bg-green text-white">Guardar</a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-offset-1 col-sm-6">
+				<div class="basic-box">
+					<p>Afiliaciones Sindicales Disponibles</p>
+					<div class="table-responsive">
+						<table class="table table-bordered table-hover table-striped table-condensed">
+							<thead>
+								<tr class="bg-blue text-white">
+									<td>Nombre</td>
+									<td>Logo</td>
+								</tr>
+							</thead>
+							<tbody name="tablaCredencial"></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<script type="text/javascript" src="../../js/common.js"></script>
+	<script type="text/javascript" src="../../js/admin-credenciales.js"></script>
+</section>

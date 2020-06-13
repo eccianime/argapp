@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+	<meta http-equiv="Content-Security-Policy" content="default-src *  data: blob: 'unsafe-inline' 'unsafe-eval';script-src * data: blob: 'unsafe-inline' 'unsafe-eval'; connect-src * data: blob: 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src * data: blob: ; style-src * data: blob: 'unsafe-inline';font-src * data: blob: 'unsafe-inline';" />
+
+	<title>ARG APP</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" /> 
+	<link rel="stylesheet" href="css/line-awesome.min.css">
+	<link rel="stylesheet" href="css/flexboxgrid.min.css">
+	<link rel="stylesheet" href="css/jcarousel-responsive.css">
+	<link rel="stylesheet" href="css/index.css">
+
+	<link rel="apple-touch-icon" href="img/favicon.png">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+
+	<script src="js/lib/jquery.js"></script>
+	<script src="js/lib/jquery.jcarousel.min.js"></script>
+	<script src="js/lib/jquery.mask.min.js"></script>
+	<script src="cordova.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/home.js"></script>
+	<script src="js/lib/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body onload="onBodyLoad()">
+	<section data-role="popup" data-close-btn="none" id=modalGeneral data-theme=b data-transition=pop data-dismissible="false">
+		<div data-role="header">
+			<h1 class="titulo-blanco" id=tituloModal></h1>
+		</div>
+		<div class="ui-content text-center">
+			<p id=mensajeModal></p>
+			<a href="#" id=botonAtrasModal class="ui-btn ui-btn-raised ui-btn-inline ui-corner-all" data-rel=back role="button"><i class="fa fa-ok"></i> Volver</a>
+		</div>
+	</section>
+	<section data-role="page" id="index" data-theme="c">
+		<div data-role="content" class="infinite-block">
+			 <div class="login-box">
+				 <img src="img/logo_toddes.png" style="width: 100%;">
+				 <div class="row center-xs">
+					 <div class="col-xs-12">
+						 <div class="form-group">
+							<label for="tx_usuario">Usuario:</label>
+							<input type="text" name="tx_usuario">   
+						</div>
+						<div class="form-group">
+							<label for="tx_clave">Contraseña:</label>
+							<input type="password" name="tx_clave" value="">
+						</div>
+						<a href="#" onclick="entrar()" class="ui-btn bg-green text-white">Entrar</a>
+						<a href="pages/usuario/registro.html" class="ui-btn bg-navy text-white">Registro</a>
+						<p class="text-right">
+							<a href="pages/usuario/olvido.html" class="text-nostyle">¿Olvidó su Clave?</a>
+						</p>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+	 </section>
+</body>
+</html>

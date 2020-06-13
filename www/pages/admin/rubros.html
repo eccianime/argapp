@@ -1,0 +1,42 @@
+<section data-role="page" id="admin-rubros" class="" data-theme="c">
+	<div data-role="header" data-position="fixed">
+		<a href="#" data-rel="back" class="ui-btn"><i class="la la-arrow-left"></i></a>
+		<h1><i class="la la-fw la-table"></i> Rubros</h1>
+	</div>
+	<div data-role="content">
+		<div class="basic-box">
+			<div class="row center-xs">
+				<div class="col-xs-12 col-sm-6">
+					<p>Aquí puedes agregar un rubro nuevo</p>
+					<div class="form-group">
+						<label for="tx_rubro">Rubro:</label>
+						<input type="text" name="tx_rubro">   
+					</div>
+					<a href="#" onclick="guardarRubro()" class="ui-btn bg-green text-white">Guardar</a>
+				</div>
+			</div>
+		</div>
+		<div class="basic-box">
+			<div class="row center-xs">
+				<div class="col-xs-12 col-sm-6">
+					<p>...o puedes ver los que están registrados.</p>
+				</div>
+				<div class="col-xs-12 col-sm-7">
+					<div class="table-responsive">
+						<table class="table table-bordered table-hover table-striped">
+							<thead>
+								<tr class="bg-blue text-white">
+									<td>Rubro</td>
+								</tr>
+							</thead>
+							<tbody id="tablaRubros"></tbody>
+						</table>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../../js/common.js"></script>
+	<script type="text/javascript" src="../../js/admin-rubros.js"></script>
+</section>

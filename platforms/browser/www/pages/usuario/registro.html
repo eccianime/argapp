@@ -1,0 +1,57 @@
+<section data-role="page" id="usuario-registro" data-theme="c">
+	<div data-role="content" class="infinite-block">
+		<div class="register-box">
+			<h3 class="text-center">Ingrese los datos solicitados</h3>
+			<div class="row center-xs">
+				<div class="box col-xs-12 col-sm-6">
+					<div class="form-group">
+						<label for="tx_nombres">Nombres:</label>
+						<input type="text" name="tx_nombres">   
+					</div>
+					<div class="form-group">
+						<label for="tx_apellidos">Apellidos:</label>
+						<input type="text" name="tx_apellidos">   
+					</div>
+					<div class="form-group">
+						<label for="co_genero">Genero:</label>
+						<select name="co_genero">
+							<option value="">Elige uno...</option>
+							<option value="1">Masculino</option>
+							<option value="2">Femenino</option>
+							<option value="3">Otro</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="fe_fecha_nacimiento">Fecha de Nacimiento:</label>
+						<input type="text" name="fe_fecha_nacimiento" >   
+					</div>
+				</div>
+				<div class="box col-xs-12 col-sm-6">
+					<div class="form-group">
+						<label for="tx_usuario">Usuario:</label>
+						<input type="text" name="tx_usuario">   
+					</div>
+					<div class="form-group">
+						<label for="tx_correo">Correo:</label>
+						<input type="email" name="tx_correo">   
+					</div>
+					<div class="form-group">
+						<label for="tx_clave">Contraseña:</label>
+						<input type="password" name="tx_clave">
+					</div>	
+					<div class="form-group">
+						<label for="tx_clave_r">Repita la Contraseña:</label>
+						<input type="password" name="tx_clave_r">
+					</div>
+				</div>
+				<div class="box col-xs-12 col-sm-4">
+					<a href="#" onclick="registrarUsuario()" class="ui-btn bg-navy text-white">Registro</a>
+				</div>
+				<div class="box col-xs-12 text-right">
+					<a href="#" data-rel="back" class="text-nostyle">Volver a Inicio</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../../js/usuario-registro.js"></script>
+</section>
