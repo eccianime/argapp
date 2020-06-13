@@ -31,6 +31,7 @@
         <splash src="splash.jpg" qualifier="port-ldpi"/>
         <splash src="splash.jpg" qualifier="port-mdpi"/>
         <splash src="splash.jpg" qualifier="port-xhdpi"/>
+        <preference name="SplashScreenBackgroundColor" value="rgb(81,45,168)"/>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
@@ -38,10 +39,14 @@
     </platform>
     <engine name="browser" spec="^6.0.0" />
     <preference name="SplashScreenBackgroundColor" value="rgb(81,45,168)"/>
-    <preference name="SplashScreen" value="/img/infinite_bg -2.jpg" />
-    <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="SplashScreenWidth" value="700" />
     <preference name="SplashScreenHeight" value="1000" />
-    <splash src="splash.jpg"/>
+    <preference name="SplashScreen" value="screen"/>
+    <preference name="AutoHideSplashScreen" value="true"/>
+    <preference name="SplashShowOnlyFirstTime" value="false"/>
+    <preference name="ShowSplashScreenSpinner" value="false"/>
+    <preference name="FadeSplashScreen" value="false"/>
+    <preference name="SplashScreenDelay" value="3000"/>
+    <splash src="splash.png"/>
 </widget>
