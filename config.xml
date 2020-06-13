@@ -48,5 +48,5 @@
     <preference name="ShowSplashScreenSpinner" value="false"/>
     <preference name="FadeSplashScreen" value="false"/>
     <preference name="SplashScreenDelay" value="3000"/>
-    <splash src="splash.png"/>
+    <splash src="splash.jpg"/>
 </widget>
