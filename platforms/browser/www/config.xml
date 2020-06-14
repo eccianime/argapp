@@ -17,13 +17,20 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <splash src="splash.jpg" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="orientation" value="portrait" />
     <preference name="fullscreen" value="true" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-targetSdkVersion" value="29" />
     <preference name="SplashScreenBackgroundColor" value="rgb(81,45,168)" />
-    <preference name="SplashScreen" value="/img/infinite_bg -2.jpg" />
-    <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="SplashMaintainAspectRatio" value="true" />
-    <preference name="SplashScreenWidth" value="700" />
+    <preference name="SplashScreenWidth" value="750" />
     <preference name="SplashScreenHeight" value="1000" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="SplashShowOnlyFirstTime" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="FadeSplashScreen" value="true" />
+    <preference name="SplashScreenDelay" value="3000" />
 </widget>

@@ -22,7 +22,6 @@
 	<script src="js/lib/jquery.mask.min.js"></script>
 	<script src="cordova.js"></script>
 	<script src="js/index.js"></script>
-	<script src="js/home.js"></script>
 	<script src="js/lib/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
@@ -33,32 +32,62 @@
 		</div>
 		<div class="ui-content text-center">
 			<p id=mensajeModal></p>
-			<a href="#" id=botonAtrasModal class="ui-btn ui-btn-raised ui-btn-inline ui-corner-all" data-rel=back role="button"><i class="fa fa-ok"></i> Volver</a>
+			<a href="#" id=botonAtrasModal class="ui-btn ui-btn-raised ui-btn-inline ui-corner-all" data-rel=back role="button"><i class="la la-ok"></i> Volver</a>
 		</div>
 	</section>
-	<section data-role="page" id="index" data-theme="c">
-		<div data-role="content" class="infinite-block">
-			 <div class="login-box">
-				 <img src="img/logo_toddes.png" style="width: 100%;">
-				 <div class="row center-xs">
-					 <div class="col-xs-12">
-						 <div class="form-group">
-							<label for="tx_usuario">Usuario:</label>
-							<input type="text" name="tx_usuario">   
-						</div>
-						<div class="form-group">
-							<label for="tx_clave">Contraseña:</label>
-							<input type="password" name="tx_clave" value="">
-						</div>
-						<a href="#" onclick="entrar()" class="ui-btn bg-green text-white">Entrar</a>
-						<a href="pages/usuario/registro.html" class="ui-btn bg-navy text-white">Registro</a>
-						<p class="text-right">
-							<a href="pages/usuario/olvido.html" class="text-nostyle">¿Olvidó su Clave?</a>
-						</p>
-					 </div>
-				 </div>
-			 </div>
-		 </div>
-	 </section>
+	<section data-role="page" id="index-dashboard" data-theme="c">
+	<div data-role="header" data-position="fixed">
+		<h1><span class="text-maroon">T</span>
+		<span class="text-green">O</span>
+		<span class="text-yellow">D</span>
+		<span class="text-orange">D</span>
+		<span class="text-purple">E</span>
+		<span class="text-blue">S</span></h1>
+	</div>
+	<div data-role="content" 
+>
+		<div class="basic-box">
+			<p class="text-center text-bold">Descuentos de hoy</p>
+			<div id="listaDescuentos" class="table-responsive">
+				<div class="text-center" style="height: 80px">
+					Cargando...<br/>
+					<i class="la la-sync la-spin la-3x"></i>
+				</div>
+			</div>
+			<p class="text-right"><a href="descuentos.html" class="text-nostyle">Ver Más Descuentos</a></p>
+		</div>
+		<div class="basic-box">
+			<p>¿Qué descuento estás buscando?</p>
+			<div class="row" id="listaRubros">
+				<div class="text-center" style="height: 80px">
+					Cargando...<br/>
+					<i class="la la-sync la-spin la-3x"></i>
+				</div>
+			</div>
+		</div>
+		<div class="basic-box"><p>Top Beneficios del Mes</p>
+		<div id="listaTopDescuentos" class="table-responsive">
+			<div class="text-center" style="height: 80px">
+				Cargando...<br/>
+				<i class="la la-sync la-spin la-3x"></i>
+			</div>
+		</div>
+		</div>
+		<div class="basic-box">
+			<p>Busca tu beneficio por:</p>
+			<div data-role="navbar" class="benef-navbar">
+			<ul>
+				<li><a href="#"><i class="la la-globe"></i><br/><span class=busca-benef-categ>Ubicación</span></a></li>
+				<li><a href="#"><i class="la la-tags"></i><br/><span class=busca-benef-categ>Marca</span></a></li>
+				<li><a href="#"><i class="la la-percentage"></i><br/><span class=busca-benef-categ>Descuento</span></a></li>
+				<li><a href="#"><i class="la la-credit-card"></i><br/><span class=busca-benef-categ>Tarjeta</span></a></li>
+			</ul>
+		</div>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/index-dashboard.js"></script>
+</section>
 </body>
 </html>

@@ -16,7 +16,7 @@ function checkCredencialesRSP( rsp ) {
 		html += `<table class='table table-borderless'><tr>`;
 		datos.map( function( val, idx ) {
 			var logo = val['img_logo'] != null ? val['img_logo'] : "../../img/interroga.png";
-			html += "<td><img width=80px src='"+logo+"' /></td>"
+			html += "<td><img class='img-circle' width=80px src='"+logo+"' /></td>"
 		} )
 		html += "</tr></table>";
 		$("#listaCredenciales").empty().append(html);
@@ -56,29 +56,29 @@ function verRubrosRSP ( rsp ){
 
 		html += "<div class='col-xs-12 text-center row center-xs'><a href=# class='col-xs-6 col-sm-3 ui-btn ui-mini bg-green text-white' name=verMasMenos>Ver Más</a></div>"
 
-		$("#listaRubros")
+		$("#listaRubrosUsuario")
 			.empty()
 			.append(html)
 			.enhanceWithin()
 			.ready( function() {
 				var text = "Más",
 					display = "none";
-				$("#listaRubros [name=verMasMenos]").click( function () {
+				$("#listaRubrosUsuario [name=verMasMenos]").click( function () {
 					text = text == "Más" ? "Menos" : "Más";
 					$(this).html("Ver "+text);
 					if(display == "none" ){
 						display = "block";
-						$("#listaRubros .extra-elements").slideDown("slow");
+						$("#listaRubrosUsuario .extra-elements").slideDown("slow");
 					}else{
 						display = "none";
-						$("#listaRubros .extra-elements").slideUp("slow");	
+						$("#listaRubrosUsuario .extra-elements").slideUp("slow");	
 					}
 				})
 
-			crearPaleta('#listaRubros label');
+			crearPaleta('#listaRubrosUsuario label');
 		})
 	}else{
-		$("#listaRubros").html("<div class='box col-xs-12'><p>No hay rubros disponibles.</p></div>")
+		$("#listaRubrosUsuario").html("<div class='box col-xs-12'><p>No hay rubros disponibles.</p></div>")
 	}
 }
 
@@ -86,15 +86,15 @@ function verCuponesRSP(){
 	var html = `<table class='table table-borderless'><tr>`;
 		/*datos.map( function( val, idx ) {
 			var logo = val['img_logo'] != null ? val['img_logo'] : "../../img/interroga.png";
-			html += "<td><img width=80px src='"+logo+"' /></td>"
+			html += "<td><img class='img-circle' width=80px src='"+logo+"' /></td>"
 		} )*/
-		html += "<td><img width=80px src='../../img/interroga.png' /></td>";
-		html += "<td><img width=80px src='../../img/interroga.png' /></td>";
-		html += "<td><img width=80px src='../../img/interroga.png' /></td>";
-		html += "<td><img width=80px src='../../img/interroga.png' /></td>";
-		html += "<td><img width=80px src='../../img/interroga.png' /></td>";
-		html += "<td><img width=80px src='../../img/interroga.png' /></td>";
-		html += "<td><img width=80px src='../../img/interroga.png' /></td>";
+		html += "<td><img class='img-circle' width=80px src='../../img/interroga.png' /></td>";
+		html += "<td><img class='img-circle' width=80px src='../../img/interroga.png' /></td>";
+		html += "<td><img class='img-circle' width=80px src='../../img/interroga.png' /></td>";
+		html += "<td><img class='img-circle' width=80px src='../../img/interroga.png' /></td>";
+		html += "<td><img class='img-circle' width=80px src='../../img/interroga.png' /></td>";
+		html += "<td><img class='img-circle' width=80px src='../../img/interroga.png' /></td>";
+		html += "<td><img class='img-circle' width=80px src='../../img/interroga.png' /></td>";
 		html += "</tr></table>";
-		$("#listaDescuentos").empty().append(html);
+		$("#listaDescuentosUsuario").empty().append(html);
 }

@@ -13,10 +13,6 @@ morado
 @font-face{		font-family: "Montserrat Thin"; 	src: url(../fonts/Montserrat-Thin.otf);				}
 @font-face{		font-family: "Montserrat Bold"; 	src: url(../fonts/Montserrat-Bold.otf);				}
 
-@font-face{		font-family: "Ubuntu Regular"; 	src: url(../fonts/Ubuntu-R.ttf);						}
-@font-face{		font-family: "Ubuntu Thin"; 	src: url(../fonts/Ubuntu-T.ttf);						}
-@font-face{		font-family: "Ubuntu Bold"; 	src: url(../fonts/Ubuntu-B.ttf);						}
-
 body, input, select, textarea, button, .ui-btn{
 	font-family: "Montserrat Regular";
 }
@@ -79,12 +75,10 @@ body{
 [name=email]::placeholder{
 	text-transform: none;	
 }
-/*
+
 .ui-page-active .ui-content{
-	height: 100%;
-	background-image: url(../img/infinite_bg.jpg);
-    animation: 90s scroll infinite linear;
-}*/
+	padding: 5px;	
+}
 
 @keyframes scroll{
 	100%{
@@ -124,6 +118,14 @@ a.text-nostyle{
 
 .text-center{
 	text-align: center;
+}
+
+.text-bold{
+	font-weight: bold;
+}
+
+.text-underlined{
+	text-decoration: underline;
 }
 
 .ui-page-theme-c .ui-focus,
@@ -249,7 +251,6 @@ th {
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 10px;
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -452,9 +453,17 @@ table {
 }
 
 .basic-box{
-    padding: 20px;
+    padding: 10px;
     background-color: white;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.basic-box p{
+	margin: 5px;
+}
+
+.basic-box h3{
+	margin: 10px;
 }
 
 .basic-box-reduced{
@@ -474,24 +483,29 @@ input[type=radio]{
 	visibility: collapse;
 }
 
-#listaRubros .ui-radio label{
+#listaRubros .ui-radio label,
+#listaRubrosUsuario .ui-radio label{
 	padding: 0px 0px 0px 25px;
 	font-size: 12px;
 	font-family: "Montserrat Bold";
 }
 
 #listaRubros .ui-radio .ui-btn.ui-radio-off::after,
-#listaRubros .ui-radio .ui-btn.ui-radio-on::after{
+#listaRubros .ui-radio .ui-btn.ui-radio-on::after,
+#listaRubrosUsuario .ui-radio .ui-btn.ui-radio-off::after,
+#listaRubrosUsuario .ui-radio .ui-btn.ui-radio-on::after{
 	left: 0px;
 }
 
-#listaRubros .ui-radio .ui-btn.ui-radio-off::after{
+#listaRubros .ui-radio .ui-btn.ui-radio-off::after,
+#listaRubrosUsuario .ui-radio .ui-btn.ui-radio-off::after{
 	width: 15px;
 	height: 15px;
 	margin: -8px 2px 0 2px;
 }
 
-#listaRubros .ui-radio .ui-btn.ui-radio-on::after{
+#listaRubros .ui-radio .ui-btn.ui-radio-on::after,
+#listaRubrosUsuario .ui-radio .ui-btn.ui-radio-on::after{
 	border-width: 4px;
     width: 6px;
     height: 6px;
@@ -505,6 +519,10 @@ input[type=radio]{
 
 .img-responsive{
 	width: 100%;
+}
+
+.img-circle{
+	border-radius: 50%;
 }
 
 .carta{
@@ -575,6 +593,11 @@ input[type=radio]{
 .warning-box{
 	padding: 10px 20px;
 	margin-bottom: 20px;
+}
+
+.info-box{
+	padding: 0px 20px;
+	margin-bottom: 5px;
 }
 
 .credenciales .ui-collapsible-inset{
@@ -676,7 +699,10 @@ input[type=radio]{
 
 
 
-
+.bg-lightblue-200{
+	background-color: #81d4fa !important;
+	color: white;
+}
 
 .bg-gray {
 	color: #000;

@@ -19,7 +19,7 @@ function entrarRSP( datos ){
 		usuario = datos.datos[0];
 
 		var page = usuario.co_tipo == 1 ? "usuario" : "admin";
-		$( "body" ).pagecontainer( "change", "pages/"+page+"/dashboard.html");
+		$( "body" ).pagecontainer( "change", "../../pages/"+page+"/dashboard.html");
 	}else{
 		abrirModal( 1, "Disculpe, las credenciales utilizadas son incorrectas o el usuario no existe." )
 	}	
