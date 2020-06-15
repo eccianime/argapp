@@ -19,7 +19,6 @@ function PGcargado(){
 	$("#modalGeneral").popup();
 }
 
-var usuario = {};
 //const SITIO_WEB = "http://sqltestes.zz.com.ve/";
 const SITIO_WEB = "http://localhost/arg-app/";
 

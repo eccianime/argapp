@@ -1,4 +1,6 @@
-AJAX( "verRubros", verRubrosRSP );
+$(function() {
+	AJAX( "verRubros", verRubrosRSP );
+})
 
 function verRubrosRSP( rsp ) {
 	var datos = rsp.datos,

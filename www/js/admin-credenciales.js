@@ -1,10 +1,11 @@
-var idP;
+$( function() {
+	cargarCredenciales();	
+} )
 
-cargarCredenciales();	
 
 function cargarCredenciales() {
 	setTimeout( function() {
-		idP = $("body").pagecontainer( "getActivePage" )[0]['id'].substring(11);
+		var idP = $("body").pagecontainer( "getActivePage" )[0]['id'].substring(11);
 		AJAX( 'verCredenciales', verCredencialesRSP, { id: idP, img: 1 } )
 	}, 500 );
 }

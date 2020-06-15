@@ -1,10 +1,14 @@
-AJAX( "verRubros", verRubrosRSP );
-crearPaleta('.benef-navbar li a');
-verCuponesRSP();
+$(function() {
+	AJAX( "verRubros", verRubrosRSP );
+	crearPaleta('.benef-navbar li a');
+	verCuponesRSP();
 
-AJAX( "checkCredenciales", checkCredencialesRSP, usuario );
-var usr = usuario.tx_nombres.indexOf(" ") > 0 ? usuario.tx_nombres.substring(0,usuario.tx_nombres.indexOf(" ") ) : usuario.tx_nombres;
-$("#tx_nombres").html( usr );
+	var usuario = JSON.parse( localStorage.getItem('usuario' ));
+
+	AJAX( "checkCredenciales", checkCredencialesRSP, usuario );
+	var usr = usuario.tx_nombres.indexOf(" ") > 0 ? usuario.tx_nombres.substring(0,usuario.tx_nombres.indexOf(" ") ) : usuario.tx_nombres;
+	$("#tx_nombres").html( usr );
+})
 
 function checkCredencialesRSP( rsp ) {
 	var datos = rsp.datos,

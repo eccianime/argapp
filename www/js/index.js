@@ -19,9 +19,8 @@ function PGcargado(){
 	$("#modalGeneral").popup();
 }
 
-var usuario = {};
-//const SITIO_WEB = "http://sqltestes.zz.com.ve/";
-const SITIO_WEB = "http://localhost/arg-app/";
+const SITIO_WEB = "http://sqltestes.zz.com.ve/";
+//const SITIO_WEB = "http://localhost/arg-app/";
 
 const URL_BASE = SITIO_WEB+"webservice-argapp.php?accion=";
 

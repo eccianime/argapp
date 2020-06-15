@@ -1,4 +1,6 @@
-$('.ui-page-active [name=fe_fecha_nacimiento]').mask('00/00/0000');
+$(function() {
+	$('.ui-page-active [name=fe_fecha_nacimiento]').mask('00/00/0000');
+})
 
 function registrarUsuario(){
 	var datos = {
