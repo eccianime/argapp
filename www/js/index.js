@@ -19,7 +19,7 @@ function PGcargado(){
 	$("#modalGeneral").popup();
 }
 
-const SITIO_WEB = "http://sqltestes.zz.com.ve/";
+const SITIO_WEB = "http://cordova-testingsite.rf.gd/";
 //const SITIO_WEB = "http://localhost/arg-app/";
 
 const URL_BASE = SITIO_WEB+"webservice-argapp.php?accion=";

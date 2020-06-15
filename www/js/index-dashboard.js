@@ -63,13 +63,13 @@ function verCuponesRSP(){
 			var logo = val['img_logo'] != null ? val['img_logo'] : "../../img/interroga.png";
 			html += "<td><img class='img-circle' width=80px src='"+logo+"' /></td>"
 		} )*/
-		html += "<td><img class='img-circle' width=80px src='../../img/interroga.png' /></td>";
-		html += "<td><img class='img-circle' width=80px src='../../img/interroga.png' /></td>";
-		html += "<td><img class='img-circle' width=80px src='../../img/interroga.png' /></td>";
-		html += "<td><img class='img-circle' width=80px src='../../img/interroga.png' /></td>";
-		html += "<td><img class='img-circle' width=80px src='../../img/interroga.png' /></td>";
-		html += "<td><img class='img-circle' width=80px src='../../img/interroga.png' /></td>";
-		html += "<td><img class='img-circle' width=80px src='../../img/interroga.png' /></td>";
+		html += "<td><img class='img-circle' width=80px src='img/interroga.png' /></td>";
+		html += "<td><img class='img-circle' width=80px src='img/interroga.png' /></td>";
+		html += "<td><img class='img-circle' width=80px src='img/interroga.png' /></td>";
+		html += "<td><img class='img-circle' width=80px src='img/interroga.png' /></td>";
+		html += "<td><img class='img-circle' width=80px src='img/interroga.png' /></td>";
+		html += "<td><img class='img-circle' width=80px src='img/interroga.png' /></td>";
+		html += "<td><img class='img-circle' width=80px src='img/interroga.png' /></td>";
 		html += "</tr></table>";
 		$("#listaDescuentos").empty().append(html);
 }
