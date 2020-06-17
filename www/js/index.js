@@ -19,7 +19,7 @@ function PGcargado(){
 	$("#modalGeneral").popup();
 }
 
-const SITIO_WEB = "http://testsiteforphp2020.epizy.com/";
+const SITIO_WEB = "http://cordova-testingsite.rf.gd/";
 //const SITIO_WEB = "http://localhost/arg-app/";
 
 const URL_BASE = SITIO_WEB+"webservice-argapp.php?accion=";
@@ -78,7 +78,7 @@ function rspBaseV2( datos ) {
 	var html = "<div class='slide in text-white bg-"+fondo+" alert'>\
 					<h4><i class='icon la-fw la la-check'></i> "+datos.msg+".</h4></div>";
 	$('.ui-page-active .ui-content').prepend(html);
-	$(".alert").delay(1000).fadeOut(1000, function() {
+	$(".alert").delay(500).fadeOut(500, function() {
 		$(this).remove();
 	});
 }
